@@ -1,0 +1,20 @@
+<section class="comparasion-container">
+    <div class="image-stack">
+        <img [src]="beforeImage()"
+             alt="Antes"
+             [class.visible]="!isShowingAfter()">
+
+        <img [src]="afterImage()"
+             alt="Depois"
+             [class.visible]="isShowingAfter()">
+    </div>
+
+    <div class="central-content">
+        <h2>{{tittle()}}</h2>
+        <p>{{description()}}</p>
+        <p class="highlight">{{highlight()}}</p>
+        <app-button
+            [tittle]="buttonText()"
+        ></app-button>
+    </div>
+</section>

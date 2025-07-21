@@ -1,0 +1,15 @@
+.button{
+    display: inline-block;
+    background-color: var(--button-green);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button:hover{
+    background-color: var(--button-green-hover);
+    transform: scale(1.05);
+}
