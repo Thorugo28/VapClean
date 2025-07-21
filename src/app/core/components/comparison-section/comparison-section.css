@@ -59,3 +59,29 @@
     color: var(--button-green);
     font-weight: bold;
 }
+
+@media (max-width: 768px){
+    .comparasion-container{
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .central-content {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        width: 100%;
+        background: var(--background);
+        padding: 20px;
+        box-sizing: border-box;
+        order: 0;
+    }
+    .central-content P{
+        color: #343A40;
+    }
+
+    .image-stack img{
+        border-radius: 0;
+    }
+}
