@@ -11,6 +11,6 @@ export class VideoCards {
   videoUrl = input<string>();
   tittle = input<string>();
   description = input<string>();
-  price = input<string>();
+  price = input<number>();
 
 }

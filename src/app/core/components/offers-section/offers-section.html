@@ -1,0 +1,14 @@
+<section>
+    <h2>PROMOÇÕES RELÂMPAGO PARA VOCÊ!</h2>
+
+    <div class="videos-container">
+        <app-video-cards
+        *ngFor="let video of listaDeVideo"
+        [videoUrl]="video.videoUrl"
+        [tittle]="video.tittle"
+        [description]="video.description"
+        [price]="video.price"
+        >
+        </app-video-cards>
+    </div>
+</section>

@@ -2,10 +2,12 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './core/components/header/header';
 import { ComparisonSection } from "./core/components/comparison-section/comparison-section";
+import { VideoCards } from "./shared/components/video-cards/video-cards";
+import { OffersSection } from "./core/components/offers-section/offers-section";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, ComparisonSection],
+  imports: [RouterOutlet, Header, ComparisonSection, VideoCards, OffersSection],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
