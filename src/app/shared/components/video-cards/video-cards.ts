@@ -1,16 +1,39 @@
-import { Component, input } from '@angular/core';
+import { Component, input, Inject, PLATFORM_ID } from '@angular/core';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { CommonModule } from '@angular/common';
+import { isPlatformBrowser, CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-video-cards',
-  imports: [],
+  standalone: true,
+  imports: [YouTubePlayerModule, CommonModule, CurrencyPipe],
   templateUrl: './video-cards.html',
   styleUrl: './video-cards.css'
 })
 export class VideoCards {
 
-  videoUrl = input<string>();
+  videoId= input<string>();
+
   tittle = input<string>();
   description = input<string>();
   price = input<number>();
+
+  isYoutubeApiReady = false;
+  
+  constructor(@Inject(PLATFORM_ID) private platformId: Object){
+
+    if(isPlatformBrowser(this.platformId)){
+      if(!window['YT']) {
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api'
+        document.head.appendChild(tag);
+        window['onYouTubeIframeAPIReady'] = () => {
+          this.isYoutubeApiReady = true
+        };
+      } else {
+        this.isYoutubeApiReady = true
+      }
+    }
+  }
 
 }

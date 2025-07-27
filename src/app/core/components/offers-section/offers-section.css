@@ -1,0 +1,43 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+h2{
+    font-size: 46px; 
+    color: var(--blue-darker);
+}
+.videos-container{
+  display: grid;
+  /* Cria 3 colunas de tamanho igual */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 28px; /* Espaçamento entre os cards */
+  
+  /* A mágica para telas grandes acontece aqui 👇 */
+  width: 100%;
+  max-width: 1000px; /* Largura máxima do painel (3 cards + espaçamento) */
+  margin: 0 auto; /* Centraliza o painel na página */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .videos-container{
+        grid-template-columns: 1fr;
+        width: 360px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    app-video-cards{
+        width: 303px;
+    }
+}

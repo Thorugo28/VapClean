@@ -1,10 +1,16 @@
 <div class="card">
-    <div class="video-container">
-        <video [src]="videoUrl()"></video>
+    <div class="video-wrapper">
+        <youtube-player
+            [videoId]="videoId()"
+        >
+    </youtube-player>
     </div>
-    <div class="card-container">
-        <h3>{{tittle}}</h3>
-        <p>{{description}}</p>
-        <p>{{price}}</p>
-    </div>
+    <a href="" style="text-decoration: none;">
+        <div class="card-container">
+            <h3>{{tittle()}}</h3>
+            <p class="description">{{description()}}</p>
+            <p class="price">{{price() | currency:'BRL'}}</p>
+        </div>
+    </a>
 </div>
+
