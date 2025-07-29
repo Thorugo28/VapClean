@@ -1,0 +1,45 @@
+.bi-star-fill{
+    color: #FACC15;
+    font-size: 24px;
+}
+.bi-quote{
+    color: #4AC884;
+    font-size: 48px;
+}
+
+.rating-card{
+    padding-left: 13px;
+    padding-top: 7px;
+    padding-right: 21px;
+    padding-bottom: 13px;
+    border-radius: 4px;
+    max-width: 261px;
+    background-color: var(--blue-card);
+    border: 1px solid;
+    border-color: var(--blue-border)
+}
+
+.rating{
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
+hr{
+    color: white;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+.loc{
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}

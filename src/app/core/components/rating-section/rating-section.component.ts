@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RatingCardComponent } from "../../../shared/components/rating-card/rating-card.component";
+import { CommonModule } from '@angular/common';
 
 export interface RatingInfo {
     rating: string,
@@ -9,7 +10,7 @@ export interface RatingInfo {
 
 @Component({
   selector: 'app-rating-section',
-  imports: [RatingCardComponent],
+  imports: [RatingCardComponent, CommonModule],
   templateUrl: './rating-section.component.html',
   styleUrl: './rating-section.component.css'
 })
@@ -82,9 +83,9 @@ export class RatingSectionComponent {
 
   constructor(){}
 
-  ngOnInit(): void{
-    this.avaliacoesExibidas = this.embaralharArray(this.ratingList).slice(0,3);
-  }
+   ngOnInit(): void{
+    this.avaliacoesExibidas = this.embaralharArray(this.ratingList).slice(0,3); 
+  } 
 
   private embaralharArray(array: any[]): any[] {
     let currentIndex = array.length, randomIndex;
@@ -92,10 +93,12 @@ export class RatingSectionComponent {
     while (currentIndex !== 0){
       randomIndex = Math.floor(Math.random() * currentIndex);
 
+      currentIndex--;
+
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
     return array;
-  }
+  } 
 
 }

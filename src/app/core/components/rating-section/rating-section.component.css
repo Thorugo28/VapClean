@@ -1,0 +1,20 @@
+.rating-card-container{
+    display: flex;
+    gap: 140px;
+}
+section{
+    padding-top: 38px;
+    background-color: var(--blue-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+p{
+    font-size: 20px;
+    color: var(--blue-border);
+}
