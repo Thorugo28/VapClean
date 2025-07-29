@@ -4,10 +4,11 @@ import { Header } from './core/components/header/header';
 import { ComparisonSection } from "./core/components/comparison-section/comparison-section";
 import { VideoCards } from "./shared/components/video-cards/video-cards";
 import { OffersSection } from "./core/components/offers-section/offers-section";
+import { RatingSectionComponent } from "./core/components/rating-section/rating-section.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, ComparisonSection, VideoCards, OffersSection],
+  imports: [RouterOutlet, Header, ComparisonSection, VideoCards, OffersSection, RatingSectionComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

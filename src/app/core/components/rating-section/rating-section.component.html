@@ -1,0 +1,13 @@
+<section>
+    <h2>O Que Nossos Clientes Dizem</h2>
+
+    <div class="rating-card-container">
+        <app-rating-card
+            *ngFor="let avalicao of ratingList"
+            [rating]="avalicao.rating"
+            [name]="avalicao.name"
+            [loc]="avalicao.loc"
+        >
+        </app-rating-card>
+    </div>
+</section>
