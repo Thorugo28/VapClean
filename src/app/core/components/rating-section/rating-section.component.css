@@ -18,3 +18,16 @@ p{
     font-size: 20px;
     color: var(--blue-border);
 }
+
+@media(max-width: 768px ){
+    h2, p{
+        padding: 12px;
+        text-align: center;
+    }
+
+    .rating-card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
