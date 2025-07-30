@@ -9,3 +9,11 @@ youtube-player,
   height: 100% !important;
   border: none !important;
 }
+
+.video-rating .youtube-player-placeholder,
+.video-rating iframe {
+  border-radius: 15px;
+  position: static !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+}

@@ -1,0 +1,40 @@
+.video-rating {
+    width: 1054px;
+    height: 300px;
+  position: relative;
+  display: flex;          
+  align-items: center;   
+  gap: 40px;            
+  background-color: #3b4b8a;
+  padding: 50px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+
+  border: 1px solid;
+  border-color: var(--blue-border);
+}
+
+.details-container {
+  flex: 1; 
+}
+
+.details-container h2 {
+  font-size: 32px;
+  color: var(--icon-green);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.video-rating youtube-player {
+  border-radius: 15px;
+  position: static !important;
+  height: auto !important;
+  flex: 1;
+  min-width: 0;
+  width: 100% !important;
+  aspect-ratio: 16 / 9;
+  top: unset !important;
+  left: unset !important;
+}

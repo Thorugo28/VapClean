@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input, OnInit } from '@angular/core';
 import { RatingCardComponent } from "../../../shared/components/rating-card/rating-card.component";
 import { CommonModule } from '@angular/common';
+import { RatingVideoComponent } from "../../../shared/components/rating-video/rating-video.component";
 
 export interface RatingInfo {
     rating: string,
@@ -10,11 +11,12 @@ export interface RatingInfo {
 
 @Component({
   selector: 'app-rating-section',
-  imports: [RatingCardComponent, CommonModule],
+  imports: [RatingCardComponent, CommonModule, RatingVideoComponent],
   templateUrl: './rating-section.component.html',
   styleUrl: './rating-section.component.css'
 })
 export class RatingSectionComponent {
+
 
   ratingList: RatingInfo[] =[
      {

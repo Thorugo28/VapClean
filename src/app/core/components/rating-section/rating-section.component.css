@@ -6,6 +6,7 @@ section{
     padding-top: 38px;
     background-color: var(--blue-background);
     display: flex;
+    gap: 24px;
     flex-direction: column;
     align-items: center;
 }
@@ -21,7 +22,7 @@ p{
 
 @media(max-width: 768px ){
     h2, p{
-        padding: 12px;
+        padding: 12px ;
         text-align: center;
     }
 
