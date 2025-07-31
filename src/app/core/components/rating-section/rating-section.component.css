@@ -20,6 +20,10 @@ p{
     color: var(--blue-border);
 }
 
+app-rating-video{
+    padding-bottom: 40px;
+}
+
 @media(max-width: 768px ){
     h2, p{
         padding: 12px ;

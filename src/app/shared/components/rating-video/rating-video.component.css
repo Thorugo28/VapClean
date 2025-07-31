@@ -1,6 +1,5 @@
 .video-rating {
-    width: 1054px;
-    height: 300px;
+    max-width: 1054px;
   position: relative;
   display: flex;          
   align-items: center;   
@@ -37,4 +36,36 @@
   aspect-ratio: 16 / 9;
   top: unset !important;
   left: unset !important;
+}
+
+@media (max-width: 768px) {
+
+  /* 1. Ajustando o container principal */
+  .video-rating {
+    /* Transforma o layout em uma coluna vertical */
+    flex-direction: column;
+    
+    /* Remove a altura fixa para que o conteúdo se ajuste */
+    height: auto;
+    
+    /* Reduz o espaçamento interno para telas menores */
+    padding: 30px 20px;
+  }
+
+  /* 2. Centralizando o conteúdo de texto */
+  .details-container {
+    /* Centraliza o texto e o botão */
+    text-align: center;
+  }
+
+  /* 3. Ajustando o tamanho do título */
+  .details-container h2 {
+    font-size: 1.6rem; /* Diminui a fonte do título */
+  }
+
+  /* O youtube-player já está com width: 100%, 
+    então ele se ajustará automaticamente à nova largura do container.
+    Não precisamos mexer nele aqui.
+  */
+
 }

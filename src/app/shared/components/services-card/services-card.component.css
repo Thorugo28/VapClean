@@ -1,0 +1,45 @@
+.service-card{
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    max-width: 300px;
+    border-radius: 5px;
+
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: var(--button-green);
+    border-radius: 10px 0 0 10px;
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #DCFCE7;
+}
+
+.infos{
+    padding-top: 20px;
+}
+
+.bi{
+    font-size: 24px;
+    color: var(--button-green);
+}
+h4{
+    color: var(--blue-darker);
+    font-size: 20px;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+}

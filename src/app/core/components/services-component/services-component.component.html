@@ -1,0 +1,20 @@
+<section>
+    <h2>Nossos Serviços</h2>
+    <p>Especialistas em lavagem e higienização de estofados a domicílio no RJ. A Vap Clean é a empresa que lava sofá, cadeiras, colchões, tapetes e todo tipo de estofado com total segurança, tecnologia e atendimento profissional. Oferecemos serviços de lavagem de sofás, limpeza de estofados, higienização de tapetes, lavagem de cadeiras, limpeza de colchões e muito mais! Tudo no conforto da sua casa.</p>
+
+    <div class="service-container">
+        <app-services-card
+            *ngFor="let serv of serviceList"
+            [icon]="serv.icon"
+            [text]="serv.text"
+            [tittle]="serv.tittle"
+        ></app-services-card>
+    </div>
+
+    <div class="special-offer">
+        <h3>Oferta Especial de Hoje</h3>
+        <span>Cupom com 20% OFF para Higienização - Válido apenas hoje!!</span>
+
+        <a href=""><button>Resgatar Cupom de Desconto</button></a>
+    </div>
+</section>
