@@ -3,11 +3,13 @@
 
     <div class="videos-container">
         <app-video-cards
-        *ngFor="let video of listaDeVideo"
+        *ngFor="let video of listaDeVideo; let i = index"
+        [link]="video.link"
         [videoId]="video.videoId"
         [tittle]="video.tittle"
         [description]="video.description"
         [price]="video.price"
+        [isBestSeller]="i === 0"        
         >
         </app-video-cards>
     </div>

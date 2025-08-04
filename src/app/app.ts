@@ -6,10 +6,11 @@ import { VideoCards } from "./shared/components/video-cards/video-cards";
 import { OffersSection } from "./core/components/offers-section/offers-section";
 import { RatingSectionComponent } from "./core/components/rating-section/rating-section.component";
 import { ServicesComponentComponent } from "./core/components/services-component/services-component.component";
+import { FooterComponent } from "./core/components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, ComparisonSection, VideoCards, OffersSection, RatingSectionComponent, ServicesComponentComponent],
+  imports: [RouterOutlet, Header, ComparisonSection, VideoCards, OffersSection, RatingSectionComponent, ServicesComponentComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

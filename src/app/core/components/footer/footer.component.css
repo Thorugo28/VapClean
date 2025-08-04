@@ -1,0 +1,81 @@
+footer {
+  background-color: #f8f9fa; 
+  color: #495057; 
+  padding: 40px; 
+  border-top: 1px solid #dee2e6; 
+
+
+  display: flex;
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  align-items: center; /* Alinha verticalmente no centro */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha se não houver espaço */
+  gap: 20px; /* Espaço entre os itens caso eles quebrem a linha */
+  
+  /* --- Centralização na página --- */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* --- Estilo do Bloco da Logo e Descrição --- */
+footer > div:first-child {
+  max-width: 350px; /* Limita a largura do texto para não ficar muito longo */
+}
+
+.footer-logo {
+  height: 60px; /* Define uma altura fixa para a logo */
+  margin-bottom: 15px; /* Espaço entre a logo e o texto abaixo */
+}
+
+/* --- Estilo dos Textos --- */
+footer p, footer span {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* --- Estilo dos Ícones (Ex: Bootstrap Icons) --- */
+footer i {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  font-size: 1.2rem; /* Deixa o ícone um pouco maior que o texto */
+  color: #005a8d; /* Um tom de azul para combinar com a logo VAP */
+}
+
+/* --- Organização dos Contatos --- */
+.contact p {
+  margin-bottom: 10px; /* Espaço entre as linhas de contato */
+}
+
+/* Remove a margem do último item para alinhar melhor */
+.contact p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================= */
+/* RESPONSIVIDADE (CELULAR)         */
+/* ========================================= */
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    text-align: center; /* Centraliza todo o texto */
+    padding: 30px 20px; /* Ajusta o espaçamento para telas menores */
+  }
+
+  /* Adiciona um espaço abaixo de cada bloco quando empilhado */
+  footer > div,
+  footer > span {
+    margin-bottom: 25px;
+  }
+  
+  /* Remove a margem do último item para não criar espaço extra no final */
+  footer > span:last-of-type,
+  footer > div:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

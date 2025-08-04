@@ -1,7 +1,6 @@
 import { Component, input, Inject, PLATFORM_ID } from '@angular/core';
 import { YouTubePlayerModule } from '@angular/youtube-player';
-import { CommonModule } from '@angular/common';
-import { isPlatformBrowser, CurrencyPipe } from '@angular/common';
+import { isPlatformBrowser, CurrencyPipe, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-video-cards',
@@ -14,9 +13,12 @@ export class VideoCards {
 
   videoId= input<string>();
 
+  link = input<string>();
   tittle = input<string>();
   description = input<string>();
-  price = input<number>();
+  price = input.required<number>();
+
+  isBestSeller = input<boolean>(false);
 
   isYoutubeApiReady = false;
   

@@ -5,11 +5,13 @@
         >
     </youtube-player>
     </div>
-    <a href="" style="text-decoration: none;">
+    <a href={{link()}} style="text-decoration: none;">
         <div class="card-container">
             <h3>{{tittle()}}</h3>
             <p class="description">{{description()}}</p>
-            <p class="price">{{price() | currency:'BRL'}}</p>
+            <p *ngIf="price() > 0" class="price">{{price() | currency:'BRL'}}
+                <span *ngIf="isBestSeller()" class="best-seller-tag">Mais Vendido!</span>
+            </p>
         </div>
     </a>
 </div>

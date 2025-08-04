@@ -4,6 +4,11 @@ body{
   background-color: var(--background);
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 youtube-player,
 .youtube-player-placeholder, iframe{
   position: absolute !important;
