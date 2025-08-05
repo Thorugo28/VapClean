@@ -7,7 +7,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 303px;
-    height: 555px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     transition: 0.3s;
@@ -63,7 +63,7 @@ youtube-player, youtube-player-placeholder {
 .card-container h3{
     font-family: 'Montserrat', sans-serif;
     margin: 0 0 10px 0;
-    font-size: 1.4em;
+    font-size: 1.25em;
     color: var(--blue-darker);
 }
 
@@ -97,4 +97,20 @@ youtube-player, youtube-player-placeholder {
     border-radius: 4px;
     margin-left: 10px; 
     text-transform: uppercase;
+}
+
+.promo-button{
+    background-color: var(--button-green);
+    color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding: 4px 0 4px 0;
+}
+
+.promo-button i {
+    padding: 2px;
 }
