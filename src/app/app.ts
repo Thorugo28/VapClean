@@ -17,10 +17,10 @@ import { FooterComponent } from "./core/components/footer/footer.component";
 export class App {
   protected readonly title = signal('vap-clean');
 
-  before = 'assets/images/before.jpg'
-  after = 'assets/images/after.jpg'
+  before = 'assets/images/antes.jpg'
+  after = 'assets/images/depois.jpg'
 
-  tittle_comparison = 'Especialistas em lavagem e higienização de estofados a domicílio no Rio de Janeiro.'
+  tittle_comparison = 'Especialistas em limpeza e higienização de estofados a domicílio no Rio de Janeiro.'
   description = 'Somos a empresa que lava sofá, cadeiras, colchões, tapetes e oferece limpeza profissional completa para todos os tipos de estofados. Atendemos com agilidade, qualidade e garantia de conforto e prevenção contra ácaros, bactérias e problemas respiratórios.'
   highlight = 'Resultado com fragância agradável e proteção contra bactérias'
 }

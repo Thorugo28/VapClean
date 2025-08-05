@@ -109,8 +109,13 @@ youtube-player, youtube-player-placeholder {
     font-weight: 600;
     margin-bottom: 12px;
     padding: 4px 0 4px 0;
+    transition: 0.5s;
 }
 
 .promo-button i {
     padding: 2px;
+}
+.promo-button:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
 }
