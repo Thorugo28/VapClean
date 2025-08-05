@@ -92,7 +92,30 @@ span{
         width: 80%;
     }
 
-    .special-offer{
-        width: 80%;
+ .special-offer {
+        /* Remove a largura fixa e usa uma largura relativa para se adaptar à tela */
+        width: 90%; 
+        padding: 25px 20px; /* Ajusta o padding interno para telas menores */
+    }
+
+    /* Ajusta o título dentro da oferta */
+    .special-offer h3 {
+        font-size: 26px; /* Anterior: 32px */
+        text-align: center; /* Garante a centralização em todos os casos */
+    }
+
+    /* Ajusta o texto de suporte dentro da oferta */
+    .special-offer span {
+        font-size: 16px; /* Anterior: 20px */
+        padding: 0 10px; /* Adiciona um respiro lateral se o texto for grande */
+    }
+
+    /* Ajusta o botão dentro da oferta */
+    .special-offer button {
+        /* O botão passa a ocupar quase toda a largura do container pai */
+        width: 100%; 
+        max-width: 350px; /* Limite para não ficar excessivamente largo */
+        font-size: 18px; /* Anterior: 20px */
+        padding: 12px;
     }
 }
